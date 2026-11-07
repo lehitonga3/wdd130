@@ -1,6 +1,6 @@
 nav {
   background-color: darkblue;
-  padding: 0;
+  padding: 10px;
 }
 nav a {
   color: white;
@@ -23,7 +23,7 @@ main img{
   box-shadow: 0 0 30px gray;
 }
 p {
-  padding: 10px;
+  padding: 0;
 }
 
 aside{
@@ -31,7 +31,7 @@ aside{
   margin: 1em;
   border: 1px solid rgba(0, 0, 0, 0.2); /* why hex instead of rgba?*/
   padding: 1em;
-  background-color: #eee;
+  background-color: #6badda;
   color: #333;
   text-align: center;
 }
