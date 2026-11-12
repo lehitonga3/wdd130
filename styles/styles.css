@@ -1,48 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*header*/
 nav {
-  background-color: darkblue;
+  background-color: rgb(95, 155, 103);
   padding: 10px;
 }
+
+/* header words*/
 nav a {
   color: white;
   display: block;
   padding: 20px;
 }
+
+/* title */
 h1 {
-  color: darkblue;
+  color: rgb(26, 155, 206);
+  text-align: center;
+  margin-bottom: 10px;
 }
 
+/*main content display (where the page contents will go)*/
 main{
-  max-width: 200px;
+  max-width: 450px;
+  color: rgb(49, 49, 49);
+  margin: 0 auto;
+  padding: 2px;
 }
 
+/*profile picture*/
 main img{
-  width: 150px;
+  width: 120px;
   height: auto;
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
   padding: 2px;
-  box-shadow: 0 0 30px gray;
+  box-shadow: 0 0 30px rgb(185, 51, 51);
+  float: right;
+  margin-left: 10px;
 }
 p {
   padding: 0;
 }
 
-aside{
+/*state content*/
+aside {
+  position: relative;
   width: 20em;
   margin: 1em;
-  border: 1px solid rgba(0, 0, 0, 0.2); /* why hex instead of rgba?*/
+  border: 1px solid rgb(0, 0, 0);
   padding: 1em;
-  background-color: #6badda;
-  color: #333;
+  background-color: #788f5a;
+  color: #f8f8f8;
   text-align: center;
 }
 
+/*NC Image*/
 aside img{
   width: 200px;
   height: auto;
 }
 
+aside h2{
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+}
+
+
+
+/*Jesus Loves You content*/
 footer{
   margin-top: 1em;
   border-top: 1px solid #000;
   text-align: center;
+}
+
+/* Class Selector */
+
+.box{
+  clear:both;
+  margin-top: 15px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: #c6d37f;
+  color: #ffffff;
 }
