@@ -1,6 +1,5 @@
-
 :root {
-    --primary-color: #7c978c;
+    --primary-color: #174b35;
     --secondary-color: #e8c46a;
     --accent1-color: #294f73;
     --accent2-color: #f4e7c3;
@@ -16,8 +15,8 @@
 
 body {
     font-family: var(--body-font);
-    color: #ffffff;
-    background-color:var(--primary-color);
+    color: var(--primary-color);
+    background-color: #ffffff;
     line-height: 1.5;
 }
 
@@ -26,12 +25,14 @@ header, main, footer {
     margin: 0 auto;
 }
 
+/* HEADER */
+
 header {
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
     padding: 10px 20px;
-    border: 1px solid #294f73;
+    border: 1px solid var(--accent1-color);
 }
 
 header img {
@@ -47,14 +48,28 @@ header nav {
 
 header nav a {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     padding: 10px 20px;
     font-weight: bold;
 }
 
+header nav a:hover {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+/* HERO */
+
 .hero {
     position: relative;
+    width: 100%;
     margin-bottom: 20px;
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .hero h1 {
@@ -73,19 +88,27 @@ header nav a {
     top: 45%;
     left: 7%;
     width: 86%;
-    margin: 1px;
-    padding: 16px;
-    background-color: #294f73;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 20px;
+    margin: 0;
+    background-color: var(--accent1-color);
+    color: white;
 }
 
 .hero article img {
     width: 125px;
     height: auto;
-    margin-left: 16px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 8px;
 }
+
+.hero article p {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* HISTORY SECTION */
 
 .history {
     border: 1px solid var(--accent1-color);
@@ -96,7 +119,7 @@ header nav a {
 .history h2 {
     text-align: center;
     font-family: var(--heading-font);
-    color: var(--secondary-color);
+    color: var(--primary-color);
     border-bottom: 4px solid var(--secondary-color);
     padding-bottom: 8px;
     margin-bottom: 16px;
@@ -118,6 +141,7 @@ header nav a {
     height: auto;
 }
 
+/* ADVENTURE SECTION */
 
 .adventures {
     border: 1px solid var(--accent1-color);
@@ -128,7 +152,7 @@ header nav a {
 .adventures h2 {
     text-align: center;
     font-family: var(--heading-font);
-    color: var(--secondary-color);
+    color: var(--primary-color);
     border-bottom: 4px solid var(--secondary-color);
     padding-bottom: 8px;
     margin-bottom: 16px;
@@ -152,14 +176,16 @@ header nav a {
 
 .adventure-gallery figcaption {
     margin-top: 4px;
-    color: #243746;
+    color: var(--primary-color);
 }
+
+/* FOOTER */
 
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--accent1-color);
+    background-color: var(--accent2-color);
     padding: 16px 24px;
     border: 1px solid var(--accent1-color);
 }
