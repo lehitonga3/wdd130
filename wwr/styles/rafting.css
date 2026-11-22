@@ -29,7 +29,7 @@ header, main, footer {
     margin: 0 auto;
 }
 
-/* HEADER */
+
 header {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -61,7 +61,7 @@ header nav a:hover {
     background-color: var(--primary-color);
 }
 
-/* HERO */
+
 .hero {
     position: relative;
     width: 100%;
@@ -110,7 +110,7 @@ header nav a:hover {
     color: var(--white-color);
 }
 
-/* HISTORY */
+
 .history {
     border: 1px solid var(--accent1-color);
     padding: 20px 16px;
@@ -142,7 +142,7 @@ header nav a:hover {
     height: auto;
 }
 
-/* ADVENTURE */
+
 .adventures {
     border: 1px solid var(--accent1-color);
     padding: 20px 16px;
@@ -179,7 +179,7 @@ header nav a:hover {
     color: var(--primary-color);
 }
 
-/* FOOTER */
+
 footer {
     display: flex;
     justify-content: space-between;
